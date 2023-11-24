@@ -28,7 +28,7 @@ app.use(`/api/Famous`,require(`./Routes/Famous`))
 app.use('/api/User',require('./Routes/userRoutes'))
 app.use('/api/Piece',require('./Routes/Piece'))
 
-app.use((req,req)=>{
-    resizeBy.send("API is running...")
+app.use((req,res)=>{
+    res.send("API is running...")
 })
 
